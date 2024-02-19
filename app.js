@@ -15,6 +15,22 @@ let unirTextoCifrado=[];
 //let vocalesSeparadas =[];
 //let arrayDeLetras= [];
 
+function descifrar() {
+    //obtiene texto desde el input
+    textoInput = document.getElementById('textoInput').value;
+    console.log(textoInput);
+    //reemplaza codigo/cifrar por vocal
+    textoInput = textoInput.replaceAll (a,"a")
+    textoInput = textoInput.replaceAll (e,"e")
+    textoInput = textoInput.replaceAll (i,"i")
+    textoInput = textoInput.replaceAll (o,"o")
+    textoInput = textoInput.replaceAll (u,"u")
+    mostrarTextoCifrado('p',textoInput);
+    document.getElementById('cifrar').setAttribute('disabled','true');
+}
+
+
+
 function cifrar() {
     //obtiene texto desde el input
     textoInput = document.getElementById('textoInput').value;
@@ -75,7 +91,8 @@ function condicionesIniciales(){
     //habilita botones
     //vacia el input texto
     //muestra mensaje inicial
-    document.getElementById('cifrar','descifrar').removeAttribute('disabled');
+    document.getElementById('cifrar').removeAttribute('disabled');
+    document.getElementById('descifrar').removeAttribute('disabled');
     document.getElementById('textoInput').value = "";
     mostrarTextoCifrado('p',"Ingrese el texto para cifrar o descifrar. Recuerda solo utilizar minusculas, sin puntos o simbolos.") 
 }
