@@ -12,11 +12,15 @@
             <input onclick="condicionesIniciales()" id="textoInput"  type="text" placeholder="ingrese texto" >
         </section>
         <section>
-            <button onclick="cifrar();" id="cifrar" class="container__boton" disabled>Cifrar</button>
-            <button onclick="descifrar();"id="descifrar" class="container__boton" disabled>Descifrar</button>
+            <button onclick="cifrar()" id="cifrar" class="container__boton" disabled>Cifrar</button>
+            <button onclick="descifrar() "id="descifrar" class="container__boton" disabled>Descifrar</button>
         </section>
         <section>
-            <p class="texto">Ingresa el texto para cifrar o descifrar. Recuerda solo utilizar minusculas, sin puntos o simbolos.</p>
+            <p id="textoDesCifrado"></p>
+            <button onclick="copiarTexto()" id="copiar" class="container__boton__copiar">Copiar</button>
+        </section>
+        <section>
+            <p id="textoInformativo">Ingresa el texto. Recuerda solo utilizar letras minusculas, sin puntos o simbolos.</p>
         </section>
         
     </main>
