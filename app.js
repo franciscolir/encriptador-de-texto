@@ -21,7 +21,7 @@ function descifrar() {
     mostrarTextoCifrado('p',textoInput);
     document.getElementById('descifrar').setAttribute('disabled','true');
     document.getElementById('cifrar').setAttribute('disabled','true');
-}
+};
 
 
 function cifrar() {
@@ -71,9 +71,7 @@ function condicionesIniciales(){
     //muestra mensaje inicial
     document.getElementById('cifrar').removeAttribute('disabled');
     document.getElementById('descifrar').removeAttribute('disabled');
-    //document.getElementById('textoInput').value = "";
-    //mostrarTextoCifrado("#textoInformativo","Ingrese el texto para cifrar o descifrar. Recuerda solo utilizar minusculas, sin puntos o simbolos.");
-};
+    };
 
 function mostrarTextoCifrado(elemento, texto) {
     //mostrar el texto cifrado o descifrado
@@ -83,13 +81,22 @@ function mostrarTextoCifrado(elemento, texto) {
 };
 
 function copiarTexto() {
-    
+    //obtiene texto de parrafo textoDesCifrado
+    //crea texarea temporal para selecionar texto
+    //copia el texto cifrado cobn API de portapapeles
+    //muestra en pantalla que se copio texto e indica donde pegarlo
+    //elimina textarea temporal
+    //vacia el input y cambia el placeholder por pegar aqui
     let copiar = document.getElementById("textoDesCifrado");
     let texto = copiar.innerText;
     let textarea = document.createElement('textarea');
     textarea.value = texto;
     document.body.appendChild(textarea);
     textarea.select();
-    document.execCommand('copy');
+    textarea.setSelectionRange(0, 99999); 
+    navigator.clipboard.writeText(textarea.value);
+    mostrarTextoCifrado("#textoDesCifrado","Texto copiado");
     document.body.removeChild(textarea); 
+    document.getElementById('textoInput').value = "";
+    document.getElementById("textoInput").placeholder="pegar aqui";
 };
