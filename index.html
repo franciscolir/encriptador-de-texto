@@ -10,23 +10,38 @@
 </head>
 <body>
     <header></header>
-    <img src="imagenes/Logo.png" id="logo" class="container__logo">
+    
     <main class="container__main">
-        <section class="=container__input">
-            <input onclick="condicionesIniciales()" id="textoInput"  type="text" placeholder="" >
+
+        <section class="container__izquierdo">
+            <img src="imagenes/Logo.png" id="logo" >
         </section>
-        <section class="container__botones">
+
+
+        <section class="container__central">
+            <input onclick="condicionesIniciales()" id="textoInput"  type="text" placeholder="Ingrese el texto aqui" >
             <button onclick="cifrar()" id="cifrar" class="container__boton" disabled>Cifrar</button>
             <button onclick="descifrar() "id="descifrar" class="container__boton" disabled>Descifrar</button>
         </section>
-        <section class="container__textoMuñeco">
-            <img src="imagenes/Muñeco.png" id="Muñeco" class="container__Muñeco">
-            <p id="textoDesCifrado"></p>
-            <button onclick="copiarTexto()" id="copiar" class="container__boton__copiar">Copiar</button>
+
+        <section class="container__derecho">
+            <div class="muñeco">
+                <img src="imagenes/Muñeco.png" id="Muñeco" class="container__Muñeco">
+            </div>
+
+            <div class="textoDesCifrado">
+                <p id="parrafoDesCifrado"></p>
+            </div>
+
+            <div>
+                <button onclick="copiarTexto()" id="copiar" class="container__boton__copiar">Copiar</button>
+            </div>
+
+            <div class="container__parrafoInformativo">
+                <p id="textoInformativo">Ingresa el texto. Recuerda solo utilizar letras minusculas, sin puntos o simbolos.</p>
+            </div>
         </section>
-        <section class="container__parrafoInformativo">
-            <p id="textoInformativo">Ingresa el texto. Recuerda solo utilizar letras minusculas, sin puntos o simbolos.</p>
-        </section>
+        
         
     </main>
     <footer>

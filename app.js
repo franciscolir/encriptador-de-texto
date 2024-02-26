@@ -1,6 +1,6 @@
 
 
-let textoInput = document.getElementById('textoInput').value="Ingrese el texto aqui";
+let textoInput = document.getElementById('textoInput').value="";
 let codigoCifrar=[
     ["a","ai"],
     ["e","enter"],
@@ -10,7 +10,6 @@ let codigoCifrar=[
 ];
 let textoCifrado = [""];
 let unirTextoCifrado=[""];
-
 
 function descifrar() {
     //obtiene texto desde el input
@@ -22,7 +21,6 @@ function descifrar() {
     document.getElementById('descifrar').setAttribute('disabled','true');
     document.getElementById('cifrar').setAttribute('disabled','true');
 };
-
 
 function cifrar() {
     //obtiene texto desde el input
@@ -71,8 +69,8 @@ function condicionesIniciales(){
     //muestra mensaje inicial
     document.getElementById('cifrar').removeAttribute('disabled');
     document.getElementById('descifrar').removeAttribute('disabled');
-    document.getElementById("textoInput").value="";
-    };
+    //document.getElementById("textoInput").value="";
+};
 
 function mostrarTextoCifrado(elemento, texto) {
     //mostrar el texto cifrado o descifrado
@@ -99,5 +97,4 @@ function copiarTexto() {
     mostrarTextoCifrado("#textoDesCifrado","Texto copiado");
     document.body.removeChild(textarea); 
     document.getElementById('textoInput').value = "";
-    document.getElementById("textoInput").placeholder="pegar aqui";
 };
