@@ -1,6 +1,6 @@
 
 
-let textoInput = [""];
+let textoInput = document.getElementById('textoInput').value="Ingrese el texto aqui";
 let codigoCifrar=[
     ["a","ai"],
     ["e","enter"],
@@ -71,6 +71,7 @@ function condicionesIniciales(){
     //muestra mensaje inicial
     document.getElementById('cifrar').removeAttribute('disabled');
     document.getElementById('descifrar').removeAttribute('disabled');
+    document.getElementById("textoInput").value="";
     };
 
 function mostrarTextoCifrado(elemento, texto) {

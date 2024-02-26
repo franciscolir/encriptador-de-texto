@@ -19,6 +19,14 @@ body{
     height: 48px;
 }
 
+.container__main {
+    width: Fixed (336px);
+    height: Hug (122px);
+    top: 619px;
+    left: 1032px;
+    gap: 16px;
+
+}
 #textoInput {
     width: 577px;
     height: 48px;
@@ -32,11 +40,57 @@ body{
     text-align: left;
     color:#0A3871;
 
-
-// Animate: Instant;
-animation-duration: 0ms;
-
-
-
-    
+/* Animate: Instant; -->
+//animation-duration: 0ms;
+*/ 
 }
+
+.container__parrafoInformativo{
+    width: Hug (229px);
+    height: Hug (18px);
+    top: 851px;
+    left: 240px;
+    gap: 8px;
+
+}
+.container__botones{
+    width: Fixed (680px);
+    height: Hug (67px);
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+    
+
+}
+#cifrar{
+    
+    width: Fixed (328px);
+    height: Hug (67px);
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background: #0A3871;
+}
+
+#descifrar{
+    width: Fixed (328px);
+    height: Hug (67px);
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px;
+    gap: 8px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871
+
+}
+
+.container__textoMuñeco{
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
+
