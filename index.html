@@ -19,9 +19,14 @@
 
 
         <section class="container__central">
-            <input onclick="condicionesIniciales()" id="textoInput"  type="text" placeholder="Ingrese el texto aqui" >
-            <button onclick="cifrar()" id="cifrar" class="container__boton" disabled>Cifrar</button>
-            <button onclick="descifrar() "id="descifrar" class="container__boton" disabled>Descifrar</button>
+            <div class="input">
+                <input onclick="condicionesIniciales()" id="textoInput"  type="text" placeholder="Ingrese el texto aqui" >
+            </div>
+            <div class="container__botones">
+                <button onclick="cifrar()" id="cifrar" class="container__boton" disabled>Cifrar</button>
+                <button onclick="descifrar() "id="descifrar" class="container__boton" disabled>Descifrar</button>
+            </div>
+            
         </section>
 
         <section class="container__derecho">
@@ -44,7 +49,7 @@
         
         
     </main>
-    <footer>
+    <footer class="footer">
         <p>Desarrollado por Francisco Lira. 2024</p>
     </footer>
     <script src="app.js"> </script>
