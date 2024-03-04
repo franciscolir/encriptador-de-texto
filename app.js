@@ -68,7 +68,7 @@ function cifrar() {
 };
 
 function condicionesIniciales(){
-    //se inicia conun click en el input
+    //se inicia con un click en el input
     //habilita botones
     //vacia el input texto
     //muestra mensaje inicial
