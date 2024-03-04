@@ -17,7 +17,7 @@ function descifrar() {
     //reemplaza codigo/cifrar por vocal
     textoInput = document.getElementById('textoInput').value;
     codigoCifrar.map((element) => textoInput = textoInput.replaceAll (element[1],element[0]));
-    mostrarTextoCifrado('p',textoInput);
+    mostrarTextoCifrado("#ingrese-texto",textoInput);
     document.getElementById('descifrar').setAttribute('disabled','true');
     document.getElementById('cifrar').setAttribute('disabled','true');
 };
@@ -55,7 +55,7 @@ function cifrar() {
             }  
     }
     unirTextoCifrado=textoCifrado.join("");
-    mostrarTextoCifrado("#textoDesCifrado",unirTextoCifrado);
+    mostrarTextoCifrado("#ingrese-texto",unirTextoCifrado);
     document.getElementById('cifrar').setAttribute('disabled','true');
     document.getElementById('descifrar').setAttribute('disabled','true');
     //condicionesIniciales()
@@ -86,7 +86,7 @@ function copiarTexto() {
     //muestra en pantalla que se copio texto e indica donde pegarlo
     //elimina textarea temporal
     //vacia el input y cambia el placeholder por pegar aqui
-    let copiar = document.getElementById("textoDesCifrado");
+    let copiar = document.getElementById("ingrese-texto");
     let texto = copiar.innerText;
     let textarea = document.createElement('textarea');
     textarea.value = texto;
@@ -94,7 +94,7 @@ function copiarTexto() {
     textarea.select();
     textarea.setSelectionRange(0, 99999); 
     navigator.clipboard.writeText(textarea.value);
-    mostrarTextoCifrado("#textoDesCifrado","Texto copiado");
+    mostrarTextoCifrado("#ingrese-texto","Texto copiado");
     document.body.removeChild(textarea); 
     document.getElementById('textoInput').value = "";
 };
