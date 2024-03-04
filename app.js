@@ -58,8 +58,13 @@ function cifrar() {
     mostrarTextoCifrado("#ingrese-texto",unirTextoCifrado);
     document.getElementById('cifrar').setAttribute('disabled','true');
     document.getElementById('descifrar').setAttribute('disabled','true');
-    //condicionesIniciales()
+    document.getElementById("texto-cifrado").setAttribute('style', "height: 600px");
+    document.getElementById("boton-copiar").style.display="block";
+    document.getElementById("texto-sin-ingresar").style.display="none";
+    document.getElementById("ingrese-texto").setAttribute('style', "font-size : 26px");
+    document.getElementById("muñeco").style.display="none";
     textoCifrado=[""];
+
 };
 
 function condicionesIniciales(){

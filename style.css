@@ -47,7 +47,8 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 .input{
     width:  100%;
     height: 600px;
-   margin-top: 20%
+    margin-top: 20%;
+    background: #F3F5FC;
 }
 
 
@@ -60,7 +61,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 }
 
 #textoInput {
-    background-color: transparent;
+    background: #F3F5FC;
     border: 0;
     width: 577px;
     height: 48px;
@@ -173,7 +174,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     
 }
 
-.muñeco{
+#muñeco{
     width: 336px;
     height: 304px;
     padding-top: 200px;
@@ -184,7 +185,13 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 .container__parrafo-Informativo{
     width: 100%;
     height: 122px;
+    margin-top: 40px;
+    overflow: auto;
     
+}
+
+#texto-cifrado{
+    height: 122px;
 }
    
 #texto-sin-ingresar{
@@ -197,6 +204,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     letter-spacing: 0em;
     color: #343A40;
     margin: auto;
+    text-align: center;
 } 
 
 #ingrese-texto{
@@ -209,6 +217,11 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     letter-spacing: 0em;
     color: #495057;
     margin: auto;
+    text-align: center;
+}
+
+#boton-copiar{
+    display: none;
 }
 
 #copiar{
@@ -216,14 +229,26 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     height: 67px;
     padding: 24px;
     border-radius: 24px;
-    border: 1px;
-    
-
+    border: 1px solid #0A3871;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #f7f5f5;
 }
     
+#copiar:hover{
+    width: 340px;
+    height: 68px;
+}
 
-
-
+#copiar:active{
+    background: #FFFFFF;
+    width: 339px;
+    height: 67px;
+}
 
 
 
