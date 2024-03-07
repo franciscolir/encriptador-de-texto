@@ -1,6 +1,5 @@
 
-
-let textoInput = document.getElementById('textoInput').value="";
+let textoInput =document.getElementById('textoInput').value="";
 let codigoCifrar=[
     ["a","ai"],
     ["e","enter"],
@@ -11,11 +10,26 @@ let codigoCifrar=[
 let textoCifrado = [""];
 let unirTextoCifrado=[""];
 
+function validarInput(textoInput) { 
+    // Expresión regular para validar solo minúsculas sin símbolos ni números
+    // Obtener el valor del campo de texto
+    // Validar con la expresión regular
+    // Si no cumple con la validación, eliminar caracteres no permitidos
+    let regex = /^[a-zÿ\u00f1\s]+$/;
+    let texto = textoInput.value; 
+        
+    if (!regex.test(texto)) {
+        textoInput.value = texto.replace(/[^a-z]/g, '');
+        console.log("pasa por if");
+    }else;  
+};
+
 function descifrar() {
     //obtiene texto desde el input
     //recorre texto de input y reemplaza las coincidencias
     //reemplaza codigo/cifrar por vocal
-    textoInput = document.getElementById('textoInput').value;
+    //textoInput = document.getElementById('textoInput').value;
+    textoInput =document.getElementById('textoInput').value;
     codigoCifrar.map((element) => textoInput = textoInput.replaceAll (element[1],element[0]));
     mostrarTextoCifrado("#ingrese-texto",textoInput);
     document.getElementById('descifrar').setAttribute('disabled','true');
@@ -32,7 +46,7 @@ function cifrar() {
     //si no es vocal se incluye en array textoCifrado
     //une array textoCifrado en string unirTextoCifrado
     //elimina texto procesado 
-    
+
     textoInput = document.getElementById('textoInput').value;
     let palabras = textoInput.split("");
       
@@ -63,6 +77,11 @@ function cifrar() {
     document.getElementById("texto-sin-ingresar").style.display="none";
     document.getElementById("ingrese-texto").setAttribute('style', "font-size : 26px");
     document.getElementById("muñeco").style.display="none";
+// agregar class con api claslist
+    let a =document.querySelector(".rectangulo")//.classList.add("animated");
+    a.classList.add("animated");
+    console.log(a)
+//------------------
     textoCifrado=[""];
 
 };
