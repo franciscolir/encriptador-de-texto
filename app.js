@@ -77,11 +77,6 @@ function cifrar() {
     document.getElementById("texto-sin-ingresar").style.display="none";
     document.getElementById("ingrese-texto").setAttribute('style', "font-size : 26px");
     document.getElementById("muñeco").style.display="none";
-// agregar class con api claslist
-    let a =document.querySelector(".rectangulo")//.classList.add("animated");
-    a.classList.add("animated");
-    console.log(a)
-//------------------
     textoCifrado=[""];
 
 };

@@ -12,7 +12,6 @@ body{
     top: 619px;
     left: 1032px;
     gap: 16px;
-
 }
 
 main {
@@ -50,7 +49,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     margin-top: 20%;
     background: #F3F5FC;
 }
-
 
 #textoInput:hover::placeholder {
     color: #5c7465;
@@ -172,7 +170,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     border-radius: 32px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px #00000014;
-    
 }
 
 #muñeco{
@@ -180,7 +177,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     height: 304px;
     padding-top: 200px;
     margin: auto;
-    
 }
 
 .container__parrafo-Informativo{
@@ -188,7 +184,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     height: 122px;
     margin-top: 40px;
     overflow: auto;
-    
 }
 
 #texto-cifrado{
@@ -251,29 +246,28 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     height: 67px;
 }
 
-.rectangulo.animated {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-   }
-   @-webkit-keyframes flash {
-    0%, 50%, 100% {
-    opacity: 1;
+@media screen and (max-width:480px){
+     .container__main, .container__central, .container__izquierdo{
+        width: auto;
+        height: auto;
+        float: none;
     }
-   25%, 75% {
-    opacity: 0;
+    .container__izquierdo, #logo {
+        height: 3.5%;
     }
-   }
-   @keyframes flash {
-    0%, 50%, 100% {
-    opacity: 1;
+    #logo {
+        margin:0%;
+        height: 100%;
     }
-   25%, 75% {
-    opacity: 0;
+    .container__central, .container__izquierdo{
+        position: absolute;
     }
-   }
-   .flash {
-    -webkit-animation-name: flash;
-    animation-name: flash;
-   }
+    .container__central{
+        margin-top: 20%;
+        text-align: center;
+    }
+    .container__derecho{
+        top: 100%;
+    }
+
+}
