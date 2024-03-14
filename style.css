@@ -12,6 +12,7 @@ body{
     top: 619px;
     left: 1032px;
     gap: 16px;
+    border: purple 1px solid;
 }
 
 main {
@@ -30,17 +31,20 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     top: 40px;
     left: 40px;
     gap: 40px;
+    border: green 1px solid;
 }
 
 #logo {
     width: 120px;
     height: 48px;
     margin: 40px 0 0 30px;
+    border: orange 1px solid;
 }
 
 .container__central{
     width: 51%;
     height: 944px; 
+    border: red 1px solid;
 }
 
 .input{
@@ -72,6 +76,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     letter-spacing: 0em;
     text-align: justify;
     color: #0A3871;
+    border: yellow 1px solid;
     
 }
 
@@ -94,6 +99,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     left: 240px;
     gap: 24px;
     text-align: left;
+    border: brown 1px solid;
 }
 
 #cifrar:hover{
@@ -161,6 +167,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     height: 900px;
     text-align: center;
     display: flex;
+    border: blue 1px solid;
 }
 
 .rectangulo{
@@ -170,6 +177,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     border-radius: 32px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px #00000014;
+    border: pink 1px solid;
 }
 
 #muñeco{
@@ -247,27 +255,62 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 }
 
 @media screen and (max-width:480px){
-     .container__main, .container__central, .container__izquierdo{
+     .body, .container__main, .main, .container__central, .container__botones, .container__izquierdo,  .container__derecho{
         width: auto;
         height: auto;
-        float: none;
+        float: none ;
     }
+    .container__main{
+        margin: 1% 1% 1% 1%;
+    }
+    
+
     .container__izquierdo, #logo {
-        height: 3.5%;
+        height: 4%;
+    }
+    .container__izquierdo{
+        top:2%;
     }
     #logo {
-        margin:0%;
+        margin:0% 0%;
         height: 100%;
     }
     .container__central, .container__izquierdo{
         position: absolute;
     }
-    .container__central{
-        margin-top: 20%;
+    .container__central, .input{
+        margin-top: 0;
         text-align: center;
+        float: none;
+        height: 70% ;
+    }
+
+    #textoInput {
+        font-size: 25px;
+    }
+    .container__botones{
+        left:0px;
+        position: absolute;
+    }
+    
+    #cifrar{
+        width: auto;
+        font-size: 18px;
+    }
+
+    #descifrar{
+        width: auto;
+        font-size: 18px;
+        float: none;
+    }
+
+   
+    .container__central{
+        margin-top: 16%;
     }
     .container__derecho{
-        top: 100%;
+        
+        
     }
 
 }
