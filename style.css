@@ -255,62 +255,55 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 }
 
 @media screen and (max-width:480px){
-     .body, .container__main, .main, .container__central, .container__botones, .container__izquierdo,  .container__derecho{
+     body, .main, .container__main,  .container__izquierdo, .container__central, .input, .textarea, .container__botones,  .container__derecho, .rectangulo {
         width: auto;
         height: auto;
-        float: none ;
     }
-    .container__main{
-        margin: 1% 1% 1% 1%;
+
+    #textoInput{
+        width: auto;
+        font-size: 25px;
     }
     
-
     .container__izquierdo, #logo {
         height: 4%;
     }
+
     .container__izquierdo{
         top:2%;
     }
+
     #logo {
         margin:0% 0%;
         height: 100%;
     }
-    .container__central, .container__izquierdo{
-        position: absolute;
-    }
+
     .container__central, .input{
-        margin-top: 0;
+        margin: 0 0;
         text-align: center;
-        float: none;
         height: 70% ;
     }
 
-    #textoInput {
-        font-size: 25px;
-    }
     .container__botones{
-        left:0px;
-        position: absolute;
+        left:1%;
     }
     
-    #cifrar{
-        width: auto;
+    .container__cifrar {
+        width: 140px;
         font-size: 18px;
-    }
-
-    #descifrar{
-        width: auto;
-        font-size: 18px;
-        float: none;
-    }
-
-   
-    .container__central{
-        margin-top: 16%;
-    }
-    .container__derecho{
+        margin: 0 0 0 2px ;
+        }
+  
+    .container__boton :hover{
+        width: 27%;
+            }
         
+    .container__boton :active{
+        width: 27%;
+            }
         
-    }
+      #descifrar{
+        float: right;
+      }
 
 }
