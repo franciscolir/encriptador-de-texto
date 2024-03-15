@@ -13,7 +13,6 @@ body{
     top: 619px;
     left: 1032px;
     gap: 16px;
-    border: purple 1px solid;
 }
 
 main {
@@ -32,20 +31,17 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     top: 40px;
     left: 40px;
     gap: 40px;
-    border: green 1px solid;
 }
 
 #logo {
     width: 120px;
     height: 48px;
     margin: 40px 0 0 30px;
-    border: orange 1px solid;
 }
 
 .container__central{
     width: 51%;
     height: 944px; 
-    border: red 1px solid;
 }
 
 .input{
@@ -76,9 +72,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     line-height: 48px;
     letter-spacing: 0em;
     text-align: justify;
-    color: #0A3871;
-    border: yellow 1px solid;
-    
+    color: #0A3871;    
 }
 
 .texto-advertencia{
@@ -101,7 +95,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     left: 240px;
     gap: 24px;
     text-align: left;
-    border: brown 1px solid;
 }
 
 #cifrar:hover{
@@ -169,7 +162,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     height: 900px;
     text-align: center;
     display: flex;
-    border: blue 1px solid;
 }
 
 .rectangulo{
@@ -179,7 +171,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     border-radius: 32px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px #00000014;
-    border: pink 1px solid;
 }
 
 #muñeco{
@@ -224,7 +215,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     color: #495057;
     margin: auto;
     text-align: justify;
-    border: red 1px solid;
 }
 
 #boton-copiar{
@@ -239,7 +229,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     border: 1px solid #0A3871;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
