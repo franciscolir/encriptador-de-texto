@@ -9,7 +9,7 @@
 
 - Proyecto finalizado
 
-<h2> Vista ecritorio </h2>
+<h2> Vista escritorio </h2>
 
 - Estado inicial
 <img src="imagenes/escritorio.jpg"  alt="Desktop" width="1000px" height="650px" >
