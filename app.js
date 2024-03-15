@@ -13,11 +13,13 @@ let unirTextoCifrado=[""];
 function validarInput(textoInput) { 
     // Expresión regular para validar solo minúsculas sin símbolos ni números
     // Obtener el valor del campo de texto
+    // Cambia mayusculas a minusculas automaticamnete 
     // Validar con la expresión regular
     // Si no cumple con la validación, eliminar caracteres no permitidos
-    let regex = /^[a-zÿ\u00f1\s]+$/;
+    let regex = /^[A-Za-zÿ\u00f1\s]+$/;    
+    textoInput.value = textoInput.value.toLowerCase();
     let texto = textoInput.value; 
-        
+ 
     if (!regex.test(texto)) {
         textoInput.value = texto.replace(/[^a-z]/g, '');
         console.log("pasa por if");

@@ -287,8 +287,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
          left: 240px;  
      }
       
-    
-    
     #cifrar {
         width: 48%;
         font-size: 16px;
@@ -330,6 +328,10 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
         width: 48%;
         height: 67px;
         margin: 0 2px 0 2px ;
+    }
+    .rectangulo{
+        height: 400px;
+        
     }
 
     .muñeco__imagen {
