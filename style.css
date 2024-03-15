@@ -235,7 +235,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     border-radius: 24px;
     border: 1px solid #0A3871;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
@@ -254,9 +254,16 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     height: 67px;
 }
 
+.footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+  
+}
+
 @media screen and (max-width:480px){
-     body, .main, .container__main,  .container__izquierdo, .container__central, .input, .textarea, .container__botones,  .container__derecho, .rectangulo {
-        width: auto;
+     body, .main, .container__main,  .container__izquierdo, .container__central, .input, .textarea, .container__botones, .boton__cifrar, .boton__descifrar, .container__derecho, .rectangulo {
+        width: 98%;
         height: auto;
     }
 
@@ -283,27 +290,48 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
         text-align: center;
         height: 70% ;
     }
-
-    .container__botones{
-        left:1%;
+    
+    #cifrar {
+        width: 48%;
+        font-size: 16px;
+        margin: 0 0 0 2% ;
+        font-weight: bold;
     }
     
-    .container__cifrar {
-        width: 140px;
-        font-size: 18px;
-        margin: 0 0 0 2px ;
-        }
-  
-    .container__boton :hover{
-        width: 27%;
-            }
-        
-    .container__boton :active{
-        width: 27%;
-            }
-        
-      #descifrar{
+    #cifrar:hover{
+        width: 48%;
+        height: 67px;
+        margin: 0 0 0 2% ;
+        background: #0A3871;
+    }
+
+    #cifrar:active{
+        background: #072B61;
+        width: 48%;
+        height: 67px;
+        margin: 0 0 0 2% ;
+    }
+
+    #descifrar {
+        width: 48%;
+        font-size: 16px;
+        margin: 0 2px 0 2px ;
         float: right;
-      }
+        font-weight: bold;
+    }
+
+    #descifrar:hover{
+        width: 48%;
+        height: 67px;
+        margin: 0 2px 0 2px ;
+        background: #D8DFE8;
+    }
+
+    #descifrar:active{
+        background: #EFF1FA;
+        width: 48%;
+        height: 67px;
+        margin: 0 2px 0 2px ;
+    }
 
 }
