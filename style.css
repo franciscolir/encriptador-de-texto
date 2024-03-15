@@ -102,13 +102,13 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     width: 340px;
     height: 68px;
    margin-right: 6px;
-    }
+}
     
 #cifrar:active{
     background: #0A3871;
     width: 341px;
     height: 69px;
-    }
+}
 
 #cifrar{
     width: 338px;
@@ -131,13 +131,13 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     width: 340px;
     height: 68px;
     margin-left: 4px;
-    }
+}
 
 #descifrar:active{
     background: #EFF1FA;
     width: 338px;
     height: 67px;
-    }
+}
 
 #descifrar{
     width: 338px;
@@ -251,7 +251,6 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     text-align: center;
-  
 }
 
 @media screen and (max-width:768px){
@@ -329,12 +328,9 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
         height: 67px;
         margin: 0 2px 0 2px ;
     }
-    .rectangulo{
-        height: 400px;
-        
-    }
 
     .muñeco__imagen {
         display: none;
     }
+
 }
