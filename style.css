@@ -4,6 +4,7 @@ body{
     height: 1024px;
     top: 622px;
     left: -2277px;
+    margin: 6px 6px;
 }
 
 .container__main {
@@ -66,7 +67,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     background: #F3F5FC;
     border: 0 transparent;
     width: 670px;
-    height: 590px;
+    height: 550px;
     top: 168px;
     left: 240px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -89,6 +90,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
+    margin-left: 2%;
     padding: 0 0 10px 0;
     text-align: left;
 }
@@ -212,7 +214,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 } 
 
 #ingrese-texto{
-    width: 300px;
+    width: 70%;
     height: 48px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
@@ -222,6 +224,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     color: #495057;
     margin: auto;
     text-align: justify;
+    border: red 1px solid;
 }
 
 #boton-copiar{
@@ -261,17 +264,12 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
   
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:768px){
      body, .main, .container__main,  .container__izquierdo, .container__central, .input, .textarea, .container__botones, .boton__cifrar, .boton__descifrar, .container__derecho, .rectangulo {
         width: 98%;
         height: auto;
     }
 
-    #textoInput{
-        width: auto;
-        font-size: 25px;
-    }
-    
     .container__izquierdo, #logo {
         height: 4%;
     }
@@ -288,7 +286,13 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     .container__central, .input{
         margin: 0 0;
         text-align: center;
-        height: 70% ;
+        height: 40% ;
+    }
+
+    #textoInput{
+        width: 70%;
+        font-size: 25px;
+        
     }
     
     #cifrar {
@@ -315,7 +319,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     #descifrar {
         width: 48%;
         font-size: 16px;
-        margin: 0 2px 0 2px ;
+        margin: 0 2px 0 2px;
         float: right;
         font-weight: bold;
     }
@@ -334,4 +338,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
         margin: 0 2px 0 2px ;
     }
 
+    .muñeco__imagen {
+        display: none;
+    }
 }
