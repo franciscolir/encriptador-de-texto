@@ -12,13 +12,13 @@
 <h2> Vista ecritorio </h2>
 
 - Estado inicial
-<img src="imagenes/escritorio.jpg"  alt="Desktop" width="1000px" height="6500px" >
+<img src="imagenes/escritorio.jpg"  alt="Desktop" width="1000px" height="650px" >
 
 - Encriptar
-<img src="imagenes/escritorio2.jpg"  alt="Desktop" width="1000px" height="6500px" >
+<img src="imagenes/escritorio2.jpg"  alt="Desktop" width="1000px" height="650px" >
 
 - Copiar
-<img src="imagenes/escritorio3.jpg"  alt="Desktop" width="1000px" height="6500px" >
+<img src="imagenes/escritorio3.jpg"  alt="Desktop" width="1000px" height="650px" >
 
 <h2> Vista dispositivo movil</h2> 
 
