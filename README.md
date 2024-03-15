@@ -9,5 +9,24 @@
 
 - Proyecto finalizado
 
-<img src="imagenes/escritorio.jpg"  alt="Desktop" width="1000px" height="800px" >
+<h2> Vista ecritorio </h2>
+
+- Estado inicial
+<img src="imagenes/escritorio.jpg"  alt="Desktop" width="1000px" height="6500px" >
+
+- Encriptar
+<img src="imagenes/escritorio2.jpg"  alt="Desktop" width="1000px" height="6500px" >
+
+- Copiar
+<img src="imagenes/escritorio3.jpg"  alt="Desktop" width="1000px" height="6500px" >
+
+<h2> Vista dispositivo movil</h2> 
+
+- Estado inicial
 <img src="imagenes/movil.jpg"  alt="Movil" width="400px" height="800px" >
+
+- Encriptar
+<img src="imagenes/movil2.jpg"  alt="Movil" width="400px" height="800px" >
+
+- Copiar
+<img src="imagenes/movil3.jpg"  alt="Movil" width="400px" height="800px" >
