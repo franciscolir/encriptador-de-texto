@@ -282,8 +282,12 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     #textoInput{
         width: 70%;
         font-size: 25px;
-        
-    }
+         height: 400px;
+         top: 168px;
+         left: 240px;  
+     }
+      
+    
     
     #cifrar {
         width: 48%;
