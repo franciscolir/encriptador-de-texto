@@ -66,7 +66,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     height: 550px;
     top: 168px;
     left: 240px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 48px;
@@ -79,7 +79,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     width: 300px;
     height: 18px;
     opacity: 0.8px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -97,64 +97,80 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     text-align: left;
 }
 
-#cifrar:hover{
+.cifrar:hover{
     background: #072B61;
     width: 340px;
     height: 68px;
    margin-right: 6px;
 }
     
-#cifrar:active{
-    background: #0A3871;
+.cifrar:active{
     width: 341px;
     height: 69px;
 }
 
-#cifrar{
+.cifrar{
     width: 338px;
     height: 67px;
     padding: 24px;
+    transition: background-color 0.5s ease-in;
+    background: #0A3871;
     margin-right: 8px;
     border-radius: 24px;
-    background: #0A3871;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
+    
 }
 
-#descifrar:hover{
+.cifrar.green{
+
+    background-color: green;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.descifrar:hover{
     background: #EFF1FA;
     width: 340px;
     height: 68px;
     margin-left: 4px;
 }
 
-#descifrar:active{
+.descifrar:active{
     background: #EFF1FA;
     width: 338px;
     height: 67px;
 }
 
-#descifrar{
+.descifrar{
     width: 338px;
     height: 67px;
     padding: 24px;
     margin-left: 8px;
     border-radius: 24px;
     border: 1px;
+    transition:  0.5s ease-in;
     background: #D8DFE8;
     border: 1px solid #0A3871;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
     color: #0A3871;
+}
+
+.descifrar.green{
+
+    background-color: green;
+    text-align: center;
+    color: #f7f5f5;
 }
 
 .container__derecho{
@@ -194,7 +210,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 #texto-sin-ingresar{
     width: 300px;
     height: 58px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -207,7 +223,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 #ingrese-texto{
     width: 70%;
     height: 48px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -227,7 +243,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     padding: 24px;
     border-radius: 24px;
     border: 1px solid #0A3871;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 22px;
     font-weight: 300;
     line-height: 19px;
@@ -248,7 +264,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
 }
 
 .footer{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 16px;
     text-align: center;
 }
@@ -286,28 +302,28 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
          left: 240px;  
      }
       
-    #cifrar {
+    .cifrar {
         width: 48%;
         font-size: 16px;
         margin: 0 0 0 2% ;
         font-weight: bold;
     }
     
-    #cifrar:hover{
+    .cifrar:hover{
         width: 48%;
         height: 67px;
         margin: 0 0 0 2% ;
         background: #0A3871;
     }
 
-    #cifrar:active{
+    .cifrar:active{
         background: #072B61;
         width: 48%;
         height: 67px;
         margin: 0 0 0 2% ;
     }
 
-    #descifrar {
+    .descifrar {
         width: 48%;
         font-size: 16px;
         margin: 0 2px 0 2px;
@@ -315,14 +331,14 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
         font-weight: bold;
     }
 
-    #descifrar:hover{
+    .descifrar:hover{
         width: 48%;
         height: 67px;
         margin: 0 2px 0 2px ;
         background: #D8DFE8;
     }
 
-    #descifrar:active{
+    .descifrar:active{
         background: #EFF1FA;
         width: 48%;
         height: 67px;

@@ -33,8 +33,10 @@ function descifrar() {
     textoInput =document.getElementById('textoInput').value;
     codigoCifrar.map((element) => textoInput = textoInput.replaceAll (element[1],element[0]));
     mostrarTextoCifrado("#ingrese-texto",textoInput);
-    document.getElementById('descifrar').setAttribute('disabled','true');
-    document.getElementById('cifrar').setAttribute('disabled','true');
+    document.querySelector('.descifrar').setAttribute('disabled','true');
+    document.querySelector('.cifrar').setAttribute('disabled','true');
+    document.querySelector('.descifrar').classList.add("green");
+    document.querySelector('.descifrar').innerHTML= "REALIZADO";
 };
 
 function cifrar() {
@@ -71,13 +73,15 @@ function cifrar() {
     }
     unirTextoCifrado=textoCifrado.join("");
     mostrarTextoCifrado("#ingrese-texto",unirTextoCifrado);
-    document.getElementById('cifrar').setAttribute('disabled','true');
-    document.getElementById('descifrar').setAttribute('disabled','true');
-   document.getElementById("texto-cifrado").setAttribute('style', "height: 400px");
+    document.querySelector('.cifrar').setAttribute('disabled','true');
+    document.querySelector('.descifrar').setAttribute('disabled','true');
+    document.getElementById("texto-cifrado").setAttribute('style', "height: 400px");
     document.getElementById("boton-copiar").style.display="block";
     document.getElementById("texto-sin-ingresar").style.display="none";
     document.getElementById("ingrese-texto").setAttribute('style', "font-size : 26px");
     document.getElementById("muñeco").style.display="none";
+    document.querySelector('.cifrar').classList.add("green");
+    document.querySelector('.cifrar').innerHTML= "REALIZADO"; 
     textoCifrado=[""];
 
 };
@@ -87,8 +91,12 @@ function condicionesIniciales(){
     //habilita botones
     //vacia el input texto
     //muestra mensaje inicial
-    document.getElementById('cifrar').removeAttribute('disabled');
-    document.getElementById('descifrar').removeAttribute('disabled');
+    document.querySelector('.cifrar').removeAttribute('disabled');
+    document.querySelector('.descifrar').removeAttribute('disabled');
+    document.querySelector('.cifrar').classList.remove("green");
+    document.querySelector('.descifrar').classList.remove("green");
+    document.querySelector('.cifrar').innerHTML= "CODIFICAR";
+    document.querySelector('.descifrar').innerHTML= "DECODIFICAR";
     //document.getElementById("textoInput").value="";
 };
 

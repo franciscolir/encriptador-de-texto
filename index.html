@@ -19,12 +19,12 @@
         <section class="container__central">
             <div class="input">
                 <textarea class="textarea"
-                oninput="validarInput(this)" 
-                onclick="condicionesIniciales()"
+                required 
+                oninput="validarInput(this) , condicionesIniciales()"
                 id="textoInput"  
                 type="text" 
                 placeholder="Ingrese el texto aqui" 
-                required  
+        
                 title=""></textarea>
             </div>
 
@@ -37,8 +37,8 @@
             </div>
 
             <div class="container__botones">
-                <button onclick="cifrar()" id="cifrar" class="boton__cifrar" disabled>CODIFICAR</button>
-                <button onclick="descifrar() "id="descifrar" class="boton__descifrar" disabled>DECODIFICAR</button>
+                <button onclick="cifrar()" id="cifrar-id" class="cifrar" disabled>CODIFICAR</button>
+                <button onclick="descifrar() "id="descifrar-id" class="descifrar" disabled>DECODIFICAR</button>
             </div>
             
         </section>
