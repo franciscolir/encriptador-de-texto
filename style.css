@@ -268,11 +268,11 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     }
 
     .container__izquierdo{
-        top:2%;
+        top: 2%;
     }
 
     #logo {
-        margin:0% 0%;
+        margin: 0 0;
         height: 100%;
     }
 
@@ -285,7 +285,7 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
     #textoInput{
         width: 70%;
         font-size: 25px;
-         height: 400px;
+         height: 370px;
          top: 168px;
          left: 240px;  
      }
@@ -333,18 +333,15 @@ main .container__izquierdo, main .container__central, main .container__derecho{ 
         display: none;
     }
 
-    .scroll-container {
-        width: auto;
-        height: auto;
-        overflow-y: scroll;
+    scroll-container {
+        
+        display: block;
+        overflow-x: scroll;
         scroll-behavior: smooth;
     }
-    .scroll-page {
+
+    scroll-page {
         display: flex;
-        align-items: center;  
-        justify-content: center;
-        height: 100%;
-        font-size: 5em;   
-    }
+   }
 
 }
