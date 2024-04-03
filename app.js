@@ -29,7 +29,6 @@ function descifrar() {
     //obtiene texto desde el input
     //recorre texto de input y reemplaza las coincidencias
     //reemplaza codigo/cifrar por vocal
-    //textoInput = document.getElementById('textoInput').value;
     textoInput =document.getElementById('textoInput').value;
     codigoCifrar.map((element) => textoInput = textoInput.replaceAll (element[1],element[0]));
     mostrarTextoCifrado("#ingrese-texto",textoInput);
@@ -37,6 +36,7 @@ function descifrar() {
     document.querySelector('.cifrar').setAttribute('disabled','true');
     document.querySelector('.descifrar').classList.add("green");
     document.querySelector('.descifrar').innerHTML= "REALIZADO";
+    displayNone();
 };
 
 function cifrar() {
@@ -76,17 +76,14 @@ function cifrar() {
     document.querySelector('.cifrar').setAttribute('disabled','true');
     document.querySelector('.descifrar').setAttribute('disabled','true');
     document.getElementById("texto-cifrado").setAttribute('style', "height: 400px");
-    document.getElementById("boton-copiar").style.display="block";
-    document.getElementById("texto-sin-ingresar").style.display="none";
     document.getElementById("ingrese-texto").setAttribute('style', "font-size : 26px");
-    document.getElementById("muñeco").style.display="none";
     document.querySelector('.cifrar').classList.add("green");
     document.querySelector('.cifrar').innerHTML= "REALIZADO"; 
+    displayNone();
     textoCifrado=[""];
-
 };
 
-function condicionesIniciales(){
+function condicionesIniciales() {
     //se inicia con un click en el input
     //habilita botones
     //vacia el input texto
@@ -125,4 +122,13 @@ function copiarTexto() {
     mostrarTextoCifrado("#ingrese-texto","Texto copiado");
     document.body.removeChild(textarea); 
     document.getElementById('textoInput').value = "";
+};
+
+function displayNone() {
+    //elimina parrafo cuando cifra o descifra
+    //elimina imagen cuando cifra o descifra
+    //visibiliza boton copiar cuando cifra o descifra
+    document.getElementById("muñeco").style.display="none";
+    document.getElementById("texto-sin-ingresar").style.display="none";
+    document.getElementById("boton-copiar").style.display="block";
 };
